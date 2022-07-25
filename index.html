@@ -50,13 +50,19 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
+        h6 {
+            font-weight: normal;
+        }
+
         /*=============================================== padding */
-        .padding-5px{
+        .padding-5px {
             padding: 5px;
         }
-        .padding-5x{
+
+        .padding-5x {
             padding: 5%;
         }
+
         .padding-2h10w {
             padding: 2vh 10vw;
         }
@@ -68,17 +74,21 @@
         .paddingX-01 {
             padding: 0px 10%;
         }
+
         /*=============================================== border */
         .border {
             border: 1px solid gray;
         }
-        .round{
+
+        .round {
             border-radius: 100%;
         }
-        .border-r-10x{
+
+        .border-r-10x {
             border-radius: 10%;
         }
-        .border-r-5px{
+
+        .border-r-5px {
             border-radius: 5px;
         }
 
@@ -86,27 +96,50 @@
         .border_b {
             border-bottom: 1px solid gray;
         }
-        .border-2s-green{
-            border:2px solid green;
+
+        .border-2s-green {
+            border: 2px solid green;
         }
 
         /*/*=============================================== color */
         .color-black {
             color: black;
         }
+
         .color-green {
             color: green;
         }
+
         .color-steelblue {
             color: steelblue;
         }
-        .bg-color-white{
+
+        .color-white {
+            color: white;
+        }
+
+        /*=============================================== Background_color */
+        .bg-color-white {
             background-color: white;
         }
 
-        .logo {
+        .bg-color-lightgray {
+            background-color: gainsboro;
+        }
 
-            height: 32px;
+
+        .bg-color-steelblue {
+            background-color: steelblue;
+        }
+        .bg-color-item1{
+            background-image: linear-gradient(45deg, rgba(70, 130, 180, 1) 34%, rgba(136, 192, 251, 1) 58%);
+        }
+        .bg-color-item2{
+            background-image: linear-gradient(45deg, rgba(232, 138, 83, 1) 34%, rgba(244, 194, 101, 1) 58%);
+        }
+
+        .box-shadow {
+            box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, 0.2);
         }
 
         /*=============================================== margin */
@@ -114,11 +147,17 @@
         .mx-5x {
             margin: 0px 5%;
         }
-        .mx-5px{
+
+        .mx-5px {
             margin: 5px;
         }
-        .mx-20px{
+
+        .mx-20px {
             margin: 20px;
+        }
+
+        .mx-5px20px {
+            margin: 5px 20px;
         }
 
         /*=============================================== height */
@@ -126,31 +165,40 @@
         .h-100vh {
             height: 100vh;
         }
+
         .h-80vh {
             height: 80vh;
         }
+
         .h-60vh {
             height: 60vh;
         }
+
         .h-40vh {
             height: 40vh;
         }
+
         .h-20vh {
             height: 20vh;
         }
-        .h-100x{
+
+        .h-100x {
             height: 100%;
         }
-        .h-80x{
+
+        .h-80x {
             height: 80%;
         }
-        .h-60x{
+
+        .h-60x {
             height: 60%;
         }
-        .h-40x{
+
+        .h-40x {
             height: 40%;
         }
-        .h-20x{
+
+        .h-20x {
             height: 20%;
         }
 
@@ -176,6 +224,10 @@
             display: flex;
         }
 
+        .flex-d-col {
+            flex-direction: column;
+        }
+
         .flex-jc-center {
             justify-content: center;
         }
@@ -184,16 +236,45 @@
             justify-content: space-evenly;
         }
 
+        .flex-jc-start {
+            justify-content: start;
+        }
+
         .flex-ai-center {
             align-items: center;
+        }
+
+        .flex-ai-start {
+            align-items: flex-start;
         }
 
         .flex-g1 {
             flex-grow: 1;
         }
-        .size-180px{
-            height: 180px;
-            width: 180px;
+
+        .flex-gap-0px5px {
+            column-gap: 5px;
+        }
+
+        /*=============================================== size */
+        .size-160px {
+            height: 160px;
+            width: 160px;
+        }
+
+        .size-logo {
+            height: 32px;
+            width: 32px;
+        }
+
+        .size-selector {
+            height: 16px;
+            width: 16px;
+        }
+
+        .logo {
+
+            height: 32px;
         }
 
         /* Icon */
@@ -257,24 +338,94 @@
             <!-- L_container -->
             <div class="h-100x w-40x border-b" style="border:1px solid black;">
                 <!-- Upper_container -->
-                <div class="h-40x d-flex flex-ai-center padding-5x " >
+                <div class="h-40x d-flex flex-ai-center padding-5x ">
                     <!-- delete logo -->
-                    <div><h3 class="material-symbols-outlined border round padding-5px mx-20px color-green border-2s-green">delete</h3></div>
-                    <!-- block item -->
-                    <div class="border-r-10x size-180px" style=" background-color:steelblue;">
-                        <!-- file logo -->
-                        <div class="material-symbols-outlined padding-5px mx-20px color-steelblue bg-color-white border-r-5px">description</div>
-                        <h5>Google&nbsp;Docs</h5>
-                        <h6>Used&nbsp;for&nbsp;business</h6>
-
+                    <div>
+                        <h3
+                            class="material-symbols-outlined border round padding-5px mx-20px color-green border-2s-green">
+                            delete</h3>
                     </div>
-                    <div></div>
+                    <!-- block item -->
+                    <div
+                        class="border-r-10x size-160px d-flex flex-d-col flex-jc-center flex-ai-start bg-color-item1 box-shadow ">
+                        <!-- file logo -->
+                        <div
+                            class="material-symbols-outlined size-logo padding-5px mx-5px20px color-steelblue bg-color-white border-r-5px">
+                            description</div>
+                        <h5 class="mx-5px20px color-white">Google&nbsp;Docs</h5>
+                        <h6 class="mx-5px20px color-white">Used&nbsp;for&nbsp;business</h6>
+                    </div>
+                    <!-- item menu -->
+                    <div class="mx-20px">
+                        <div>
+                            <h4 class="mx-5px">Google&nbsp;Docs</h4>
+                        </div>
+                        <div class="mx-5px d-flex flex-gap-0px5px">
+                            <div class="d-flex flex-ai-start flex-gap-0px5px ">
+                                <div class="size-selector round bg-color-lightgray"></div>
+                                <div class="size-selector round bg-color-lightgray"></div>
+                                <div class="size-selector round bg-color-lightgray"></div>
+                            </div>
+                            <div>
+                                <select name="Lv" id="lv">
+                                    <option value="Lv&nbsp1-3">Lv&nbsp1-3</option>
+                                    <option value="Lv&nbsp2-3">Lv&nbsp2-3</option>
+                                    <option value="Lv&nbsp3-3">Lv&nbsp3-3</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h6 class="mx-5px">THB&nbsp;150</h6>
+                        </div>
+                    </div>
                 </div>
                 <!-- Lower_container -->
-                <div class="h-40x"></div>
+                <div class="h-40x d-flex flex-ai-center padding-5x ">
+                    <!-- delete logo -->
+                    <div>
+                        <h3
+                            class="material-symbols-outlined border round padding-5px mx-20px color-green border-2s-green">
+                            delete</h3>
+                    </div>
+                    <!-- block item -->
+                    <div
+                        class="border-r-10x size-160px d-flex flex-d-col flex-jc-center flex-ai-start bg-color-item2 box-shadow ">
+                        <!-- file logo -->
+                        <div
+                            class="material-symbols-outlined size-logo padding-5px mx-5px20px color-steelblue bg-color-white border-r-5px">
+                            description</div>
+                        <h5 class="mx-5px20px color-white">Google&nbsp;Docs</h5>
+                        <h6 class="mx-5px20px color-white">Used&nbsp;for&nbsp;business</h6>
+                    </div>
+                    <!-- item menu -->
+                    <div class="mx-20px">
+                        <div>
+                            <h4 class="mx-5px">Google&nbsp;Docs</h4>
+                        </div>
+                        <div class="mx-5px d-flex flex-gap-0px5px">
+                            <div class="d-flex flex-ai-start flex-gap-0px5px ">
+                                <div class="size-selector round bg-color-lightgray"></div>
+                                <div class="size-selector round bg-color-lightgray"></div>
+                                <div class="size-selector round bg-color-lightgray"></div>
+                            </div>
+                            <div>
+                                <select name="Lv" id="lv">
+                                    <option value="Lv&nbsp1-3">Lv&nbsp1-3</option>
+                                    <option value="Lv&nbsp2-3">Lv&nbsp2-3</option>
+                                    <option value="Lv&nbsp3-3">Lv&nbsp3-3</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h6 class="mx-5px">THB&nbsp;150</h6>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- R_container -->
-            <div class="h-100x w-40x border-b" ></div>
+            <div class="h-100x w-40x border-b"></div>
         </div>
     </section>
     <footer></footer>
