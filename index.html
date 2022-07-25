@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- search logo -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Shopping_cart</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        /*=============================================== a tag  */
+        a {
+            text-decoration: none;
+        }
+
+        a:link {
+            color: gray;
+        }
+
+        a:active {
+            color: gray;
+        }
+
+        a:visited {
+            color: gray;
+        }
+
+        a:hover {
+            color: gray;
+        }
+
+        /*=============================================== h tag */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /*=============================================== padding */
+        .padding-5px{
+            padding: 5px;
+        }
+        .padding-5x{
+            padding: 5%;
+        }
+        .padding-2h10w {
+            padding: 2vh 10vw;
+        }
+
+        .padding-5h10w {
+            padding: 5vh 10vw;
+        }
+
+        .paddingX-01 {
+            padding: 0px 10%;
+        }
+        /*=============================================== border */
+        .border {
+            border: 1px solid gray;
+        }
+        .round{
+            border-radius: 100%;
+        }
+        .border-r-10x{
+            border-radius: 10%;
+        }
+        .border-r-5px{
+            border-radius: 5px;
+        }
+
+
+        .border_b {
+            border-bottom: 1px solid gray;
+        }
+        .border-2s-green{
+            border:2px solid green;
+        }
+
+        /*/*=============================================== color */
+        .color-black {
+            color: black;
+        }
+        .color-green {
+            color: green;
+        }
+        .color-steelblue {
+            color: steelblue;
+        }
+        .bg-color-white{
+            background-color: white;
+        }
+
+        .logo {
+
+            height: 32px;
+        }
+
+        /*=============================================== margin */
+
+        .mx-5x {
+            margin: 0px 5%;
+        }
+        .mx-5px{
+            margin: 5px;
+        }
+        .mx-20px{
+            margin: 20px;
+        }
+
+        /*=============================================== height */
+
+        .h-100vh {
+            height: 100vh;
+        }
+        .h-80vh {
+            height: 80vh;
+        }
+        .h-60vh {
+            height: 60vh;
+        }
+        .h-40vh {
+            height: 40vh;
+        }
+        .h-20vh {
+            height: 20vh;
+        }
+        .h-100x{
+            height: 100%;
+        }
+        .h-80x{
+            height: 80%;
+        }
+        .h-60x{
+            height: 60%;
+        }
+        .h-40x{
+            height: 40%;
+        }
+        .h-20x{
+            height: 20%;
+        }
+
+        /*=============================================== width */
+        .w-100vw {
+            width: 100vw;
+        }
+
+        .w-33x {
+            width: 33%;
+        }
+
+        .w-40x {
+            width: 40%;
+        }
+
+        /*=============================================== display */
+        .d-inlineblock {
+            display: inline-block;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .flex-jc-center {
+            justify-content: center;
+        }
+
+        .flex-jc-evenly {
+            justify-content: space-evenly;
+        }
+
+        .flex-ai-center {
+            align-items: center;
+        }
+
+        .flex-g1 {
+            flex-grow: 1;
+        }
+        .size-180px{
+            height: 180px;
+            width: 180px;
+        }
+
+        /* Icon */
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 700,
+                'GRAD' 0,
+                'opsz' 48;
+
+            text-decoration: none;
+        }
+
+        /* Desktop First  */
+        @media (max-width:1080px) {}
+    </style>
+</head>
+
+<body>
+    <header class="d-flex flex-jc-evenly flex-ai-center w-100vw padding-2h10w border_b ">
+        <!-- logo -->
+        <div class="logos d-inlineblock w-33x"><img class="logo d-inlineblock" src="./Asset/logo.png" alt="logo">
+            <h2 class="d-inlineblock">Job Passcard</h2>
+        </div>
+        <!-- navbar -->
+        <div class="nav_bar d-inlineblock w-33x">
+            <a class="d-inlineblock mx-5x" href="">
+                <h3 class="color-black">ABOUT&nbsp;US</h3>
+            </a>
+            <a class="d-inlineblock mx-5x" href="">
+                <h3 class="color-black">PASSCARD</h3>
+            </a>
+            <a class="d-inlineblock mx-5x" href="">
+                <h3 class="color-black">PROFILE</h3>
+            </a>
+        </div>
+        <!-- login -->
+        <div class="profile_bar d-flex w-33x ">
+            <a class="material-symbols-outlined mx-5x" href="">search</a>
+            <a class="material-symbols-outlined mx-5x" href="">shopping_cart</a>
+            <a class="mx-5x" href="">
+                <h3 class="color-black ">LOGIN</h3>
+            </a>
+            <div class="mx-5x">
+                <h3>|</h3>
+            </div>
+            <a class="mx-5x" href="">
+                <h3 class="color-black mx-10x">SIGN&nbsp;UP</h3>
+            </a>
+        </div>
+        <div></div>
+    </header>
+    <section>
+        <div>
+            <!-- My_Cart -->
+            <h1 class="padding-5h10w">My&nbsp;Cart</h1>
+        </div>
+
+        <!-- content -->
+        <div class="h-60vh w-100vw d-flex flex-jc-center">
+            <!-- L_container -->
+            <div class="h-100x w-40x border-b" style="border:1px solid black;">
+                <!-- Upper_container -->
+                <div class="h-40x d-flex flex-ai-center padding-5x " >
+                    <!-- delete logo -->
+                    <div><h3 class="material-symbols-outlined border round padding-5px mx-20px color-green border-2s-green">delete</h3></div>
+                    <!-- block item -->
+                    <div class="border-r-10x size-180px" style=" background-color:steelblue;">
+                        <!-- file logo -->
+                        <div class="material-symbols-outlined padding-5px mx-20px color-steelblue bg-color-white border-r-5px">description</div>
+                        <h5>Google&nbsp;Docs</h5>
+                        <h6>Used&nbsp;for&nbsp;business</h6>
+
+                    </div>
+                    <div></div>
+                </div>
+                <!-- Lower_container -->
+                <div class="h-40x"></div>
+            </div>
+            <!-- R_container -->
+            <div class="h-100x w-40x border-b" ></div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
