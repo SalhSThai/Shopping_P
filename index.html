@@ -58,10 +58,21 @@
         .padding-5px {
             padding: 5px;
         }
+        .padding-20px {
+            padding: 20px;
+        }
 
         .padding-5x {
             padding: 5%;
         }
+        .paddingx-35x {
+            padding: 0px 35% ;
+        }
+        .paddingy-10p{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
 
         .padding-2h10w {
             padding: 2vh 10vw;
@@ -126,6 +137,13 @@
         .bg-color-lightgray {
             background-color: gainsboro;
         }
+        .bg-color-azure{
+            background-color: azure;
+        }
+        .bg-color-green{
+            background-color: #459A83;
+        }
+        
 
 
         .bg-color-steelblue {
@@ -141,11 +159,18 @@
         .box-shadow {
             box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, 0.2);
         }
+        .box-shadow-2{
+            box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+        }
+        
 
         /*=============================================== margin */
 
         .mx-5x {
             margin: 0px 5%;
+        }
+        .mx-10x {
+            margin: 1%;
         }
 
         .mx-5px {
@@ -158,6 +183,9 @@
 
         .mx-5px20px {
             margin: 5px 20px;
+        }
+        .mxtop-0{
+            margin-top: 0px;
         }
 
         /*=============================================== height */
@@ -214,6 +242,25 @@
         .w-40x {
             width: 40%;
         }
+        .w-100x {
+            width: 100%;
+        }
+        .w-80x {
+            width: 80%;
+        }
+        .w-60x {
+            width: 60%;
+        }
+        .w-20x {
+            width: 20%;
+        }
+
+
+
+
+        .minw-400p{
+            min-width: 400px;
+        }
 
         /*=============================================== display */
         .d-inlineblock {
@@ -239,6 +286,9 @@
         .flex-jc-start {
             justify-content: start;
         }
+        .flex-jc-between {
+            justify-content: space-between;
+        }
 
         .flex-ai-center {
             align-items: center;
@@ -255,11 +305,18 @@
         .flex-gap-0px5px {
             column-gap: 5px;
         }
+        .flex-gap-0px5px {
+            gap: 10px;
+        }
+        .flex-nowrap{
+            flex-wrap: nowrap;
+        }
+        
 
         /*=============================================== size */
-        .size-160px {
-            height: 160px;
-            width: 160px;
+        .size-140px {
+            height: 140px;
+            width: 140px;
         }
 
         .size-logo {
@@ -294,13 +351,13 @@
 </head>
 
 <body>
-    <header class="d-flex flex-jc-evenly flex-ai-center w-100vw padding-2h10w border_b ">
+    <header class="d-flex flex-jc-evenly flex-ai-center w-100vw padding-2h10w border_b   ">
         <!-- logo -->
         <div class="logos d-inlineblock w-33x"><img class="logo d-inlineblock" src="./Asset/logo.png" alt="logo">
             <h2 class="d-inlineblock">Job Passcard</h2>
         </div>
         <!-- navbar -->
-        <div class="nav_bar d-inlineblock w-33x">
+        <div class="nav_bar d-inlineblock w-33x minw-400p">
             <a class="d-inlineblock mx-5x" href="">
                 <h3 class="color-black">ABOUT&nbsp;US</h3>
             </a>
@@ -334,11 +391,11 @@
         </div>
 
         <!-- content -->
-        <div class="h-60vh w-100vw d-flex flex-jc-center">
+        <div class="h-60vh w-100vw d-flex flex-jc-center ">
             <!-- L_container -->
-            <div class="h-100x w-40x border-b" style="border:1px solid black;">
+            <div class="h-100x w-40x border-b">
                 <!-- Upper_container -->
-                <div class="h-40x d-flex flex-ai-center padding-5x ">
+                <div class="h-40x d-flex flex-ai-center padding-5x mx-20px box-shadow-2 box-shadow-2 mxtop-0">
                     <!-- delete logo -->
                     <div>
                         <h3
@@ -347,7 +404,7 @@
                     </div>
                     <!-- block item -->
                     <div
-                        class="border-r-10x size-160px d-flex flex-d-col flex-jc-center flex-ai-start bg-color-item1 box-shadow ">
+                        class="border-r-10x size-140px mx-10x d-flex flex-d-col flex-jc-center flex-ai-start bg-color-item1 box-shadow ">
                         <!-- file logo -->
                         <div
                             class="material-symbols-outlined size-logo padding-5px mx-5px20px color-steelblue bg-color-white border-r-5px">
@@ -381,7 +438,7 @@
                     </div>
                 </div>
                 <!-- Lower_container -->
-                <div class="h-40x d-flex flex-ai-center padding-5x ">
+                <div class="h-40x d-flex flex-ai-center padding-5x mx-20px box-shadow-2  ">
                     <!-- delete logo -->
                     <div>
                         <h3
@@ -390,7 +447,7 @@
                     </div>
                     <!-- block item -->
                     <div
-                        class="border-r-10x size-160px d-flex flex-d-col flex-jc-center flex-ai-start bg-color-item2 box-shadow ">
+                        class="border-r-10x size-140px d-flex flex-d-col flex-jc-center flex-ai-start bg-color-item2 box-shadow ">
                         <!-- file logo -->
                         <div
                             class="material-symbols-outlined size-logo padding-5px mx-5px20px color-steelblue bg-color-white border-r-5px">
@@ -425,7 +482,31 @@
                 </div>
             </div>
             <!-- R_container -->
-            <div class="h-100x w-40x border-b"></div>
+            <div class="h-80x w-40x box-shadow-2 d-flex flex-d-col flex-ai-start flex-jc-center padding-20px">
+                <!-- Upper_container -->
+                <div class="h-40x w-100x flex-gap-0px5px">
+                    <h4>Order&nbsp;Info</h4>
+                    <div class="d-flex flex-jc-between"><h5>Subtotal</h5><h5>THB&nbsp;300</h5></div>
+                    <div class="d-flex flex-ai-center flex-jc-center flex-gap-0px5px ">
+                        <h5 class="material-symbols-outlined">confirmation_number</h5>
+                        <input class="flex-g1" type="text" placeholder="Promotions code">
+                        <input type="button" value="APPLY">
+                    </div>
+                </div>
+                
+                <div class="bg-color-lightgray " style="height: 1px; width:90%;"></div>
+                <!-- Lower_container -->
+                <div class="h-40x w-100x d-flex flex-d-col flex-jc-between ">
+                    <div class="d-flex flex-jc-between flex-ai-center">
+                        <h5>Total&nbsp;payment</h5><h1>THB&nbsp;300</h1>
+                    </div>
+                    <div  >
+                        <input class="paddingx-35x paddingy-10p bg-color-green border-r-5px  " type="button" value="LOG IN TO CHECKOUT">
+
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
     <footer></footer>
