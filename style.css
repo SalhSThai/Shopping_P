@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*=============================================== a tag  */
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: gray;
+}
+
+a:active {
+    color: gray;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: gray;
+}
+
+/*=============================================== h tag */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h6 {
+    font-weight: normal;
+}
+
+/*=============================================== padding */
+.padding-5px {
+    padding: 5px;
+}
+.padding-20px {
+    padding: 20px;
+}
+
+.padding-5x {
+    padding: 5%;
+}
+.padding-2x10x{
+    padding: 2% 10% ;
+}
+.paddingx-35x {
+    padding: 0px 35% ;
+}
+.paddingy-10p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.padding-2h10w {
+    padding: 2vh 10vw;
+}
+
+.padding-5h10w {
+    padding: 5vh 10vw;
+}
+
+.paddingX-01 {
+    padding: 0px 10%;
+}
+
+/*=============================================== border */
+.border {
+    border: 1px solid gray;
+}
+
+.round {
+    border-radius: 100%;
+}
+
+.border-r-10x {
+    border-radius: 10%;
+}
+.border-r-13p{
+   border-radius: 13px; 
+}
+
+
+.border-r-5px {
+    border-radius: 5px;
+}
+
+
+.border_b {
+    border-bottom: 1px solid gray;
+}
+
+.border-2s-green {
+    border: 2px solid #00DCB5;
+}
+.border-1s-gray {
+    border: 1px solid gainsboro;
+}
+.border-none{
+    border: 0px solid black;
+}
+
+/*/*=============================================== color */
+.color-black {
+    color: black;
+}
+
+.color-green {
+    color: #00DCB5;
+}
+
+.color-steelblue {
+    color: steelblue;
+}
+
+.color-white {
+    color: white;
+}
+
+/*=============================================== Background_color */
+.bg-color-white {
+    background-color: white;
+}
+
+.bg-color-lightgray {
+    background-color: gainsboro;
+}
+.bg-color-azure{
+    background-color: azure;
+}
+.bg-color-green{
+    background-color: #00DCB5;
+}
+
+
+
+.bg-color-steelblue {
+    background-color: steelblue;
+}
+.bg-color-item1{
+    background-image: linear-gradient(45deg, rgba(70, 130, 180, 1) 34%, rgba(136, 192, 251, 1) 58%);
+}
+.bg-color-item2{
+    background-image: linear-gradient(45deg, rgba(232, 138, 83, 1) 34%, rgba(244, 194, 101, 1) 58%);
+}
+
+.box-shadow {
+    box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.box-shadow-2{
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+/*=============================================== margin */
+
+.mx-5x {
+    margin: 0px 5%;
+}
+.mx-10x {
+    margin: 1%;
+}
+
+.mx-5px {
+    margin: 5px;
+}
+
+.mx-20px {
+    margin: 20px;
+}
+
+.mx-5px20px {
+    margin: 5px 20px;
+}
+.mxtop-0{
+    margin-top: 0px;
+}
+
+/*=============================================== height */
+
+.h-100vh {
+    height: 100vh;
+}
+
+.h-80vh {
+    height: 80vh;
+}
+
+.h-60vh {
+    height: 60vh;
+}
+
+.h-40vh {
+    height: 40vh;
+}
+
+.h-20vh {
+    height: 20vh;
+}
+
+.h-100x {
+    height: 100%;
+}
+
+.h-80x {
+    height: 80%;
+}
+
+.h-60x {
+    height: 60%;
+}
+
+.h-40x {
+    height: 40%;
+}
+
+.h-20x {
+    height: 20%;
+}
+
+/*=============================================== width */
+.w-100vw {
+    width: 100vw;
+}
+
+.w-33x {
+    width: 33%;
+}
+
+.w-40x {
+    width: 40%;
+}
+.w-100x {
+    width: 100%;
+}
+.w-80x {
+    width: 80%;
+}
+.w-60x {
+    width: 60%;
+}
+.w-20x {
+    width: 20%;
+}
+
+
+
+
+.minw-400p{
+    min-width: 400px;
+}
+
+/*=============================================== display */
+.d-inlineblock {
+    display: inline-block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-d-col {
+    flex-direction: column;
+}
+
+.flex-jc-center {
+    justify-content: center;
+}
+
+.flex-jc-evenly {
+    justify-content: space-evenly;
+}
+
+.flex-jc-start {
+    justify-content: start;
+}
+.flex-jc-between {
+    justify-content: space-between;
+}
+
+.flex-ai-center {
+    align-items: center;
+}
+
+.flex-ai-start {
+    align-items: flex-start;
+}
+
+.flex-g1 {
+    flex-grow: 1;
+}
+
+.flex-gap-0px5px {
+    column-gap: 5px;
+}
+.flex-gap-0px5px {
+    gap: 10px;
+}
+.flex-nowrap{
+    flex-wrap: nowrap;
+}
+
+
+/*=============================================== size */
+.size-140px {
+    height: 140px;
+    width: 140px;
+}
+
+.size-logo {
+    height: 32px;
+    width: 32px;
+}
+
+.size-selector {
+    height: 16px;
+    width: 16px;
+}
+
+.logo {
+
+    height: 32px;
+}
+
+/* Icon */
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' 48;
+
+    text-decoration: none;
+}
+
+/* Desktop First  */
+@media (max-width:1080px) {}
