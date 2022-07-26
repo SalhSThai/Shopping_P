@@ -343,6 +343,12 @@ h6 {
 
     text-decoration: none;
 }
+.R_Container #btn_checkout:active{
+    box-shadow: none;
+}
+.R_Container #btn_apply:active{
+    background-color: rgb(169, 169, 169,0.4);
+}
 
 /* Desktop First  */
 @media (max-width:1080px) {}

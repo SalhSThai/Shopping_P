@@ -59,7 +59,7 @@
         <!-- content -->
         <div class="h-60vh w-100vw d-flex flex-jc-center ">
             <!-- L_container -->
-            <div class="h-100x w-40x border-b">
+            <div class="L_container h-100x w-40x border-b">
                 <!-- Upper_container -->
                 <div class="h-40x d-flex flex-ai-center padding-5x mx-20px box-shadow-2 box-shadow-2 mxtop-0">
                     <!-- delete logo -->
@@ -90,10 +90,10 @@
                                 <div class="size-selector round bg-color-lightgray"></div>
                             </div>
                             <div>
-                                <select name="Lv" id="lv">
-                                    <option value="Lv&nbsp1-3">Lv&nbsp1-3</option>
-                                    <option value="Lv&nbsp2-3">Lv&nbsp2-3</option>
-                                    <option value="Lv&nbsp3-3">Lv&nbsp3-3</option>
+                                <select class="lv" name="Lv" id="lv">
+                                    <option class="lv1" value="Lv&nbsp1-3">Lv&nbsp1-3</option>
+                                    <option class="lv2" value="Lv&nbsp2-3">Lv&nbsp2-3</option>
+                                    <option class="lv3" value="Lv&nbsp3-3">Lv&nbsp3-3</option>
                                 </select>
                             </div>
                         </div>
@@ -127,16 +127,16 @@
                             <h4 class="mx-5px">Google&nbsp;Docs</h4>
                         </div>
                         <div class="mx-5px d-flex flex-gap-0px5px">
-                            <div class="d-flex flex-ai-start flex-gap-0px5px ">
-                                <div class="size-selector round bg-color-lightgray"></div>
-                                <div class="size-selector round bg-color-lightgray"></div>
-                                <div class="size-selector round bg-color-lightgray"></div>
+                            <div class="circles d-flex flex-ai-start flex-gap-0px5px ">
+                                <div class="circle1 size-selector round bg-color-lightgray"></div>
+                                <div class="circle2 size-selector round bg-color-lightgray"></div>
+                                <div class="circle3 size-selector round bg-color-lightgray"></div>
                             </div>
                             <div>
-                                <select name="Lv" id="lv">
-                                    <option value="Lv&nbsp1-3">Lv&nbsp1-3</option>
-                                    <option value="Lv&nbsp2-3">Lv&nbsp2-3</option>
-                                    <option value="Lv&nbsp3-3">Lv&nbsp3-3</option>
+                                <select class="lv" name="Lv" id="lv">
+                                    <option class="lv1" value="Lv&nbsp1-3">Lv&nbsp1-3</option>
+                                    <option class="lv2" value="Lv&nbsp2-3">Lv&nbsp2-3</option>
+                                    <option class="lv3" value="Lv&nbsp3-3">Lv&nbsp3-3</option>
                                 </select>
                             </div>
                         </div>
@@ -148,7 +148,7 @@
                 </div>
             </div>
             <!-- R_container -->
-            <div class="h-80x w-40x box-shadow-2 d-flex flex-d-col flex-ai-start flex-jc-center padding-20px">
+            <div class="R_Container h-80x w-40x box-shadow-2 d-flex flex-d-col flex-ai-start flex-jc-center padding-20px">
                 <!-- Upper_container -->
                 <div class="h-40x w-100x d-flex flex-gap-0px5px flex-d-col">
                     <h4>Order&nbsp;Info</h4>
@@ -156,7 +156,7 @@
                     <div class="d-flex flex-ai-center flex-jc-center flex-gap-0px5px ">
                         <h5 class="material-symbols-outlined color-green ">confirmation_number</h5>
                         <input class="flex-g1 padding-5px border-1s-gray" type="text" placeholder="Promotions code">
-                        <input class="color-green border-r-13p  padding-2x10x border-2s-green" type="button" value="APPLY">
+                        <input class="color-green border-r-13p  padding-2x10x border-2s-green" id="btn_apply" type="button" value="APPLY">
                     </div>
                 </div>
                 
@@ -167,7 +167,7 @@
                         <h5>Total&nbsp;payment</h5><h1 class="color-green">THB&nbsp;300</h1>
                     </div>
                     <div  >
-                        <input class="paddingx-35x paddingy-10p bg-color-green border-r-5px border-none box-shadow " type="button" value="LOG IN TO CHECKOUT">
+                        <input class="paddingx-35x paddingy-10p bg-color-green border-r-5px border-none box-shadow " id="btn_checkout" type="button" value="LOG IN TO CHECKOUT">
 
                     </div>
                 </div>
